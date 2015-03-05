@@ -1,0 +1,14 @@
+{
+  "name": "kioskbrowser",
+  "version": "1.0.0",
+  "description": "Simple full screen split screen browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Torstein Bjørnstad <tosh@tosh.no>",
+  "license": "ISC",
+  "devDependencies": {
+    "atom-shell": "^0.21.3-1"
+  }
+}

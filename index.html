@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+  <style>
+    html, body, webview {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      height: 100%;
+    }
+    webview {
+      display: inline;
+      border: none;
+      width: 50%;
+      float: left;
+    }
+    </style>
+  <body>
+    <div class="indicator"></div>
+    <webview id="potion" src="http://mabridge01:85/status"></webview>
+    <webview id="analytics" src="http://analytics.google.com"></webview>
+
+    <script>
+      onload = function() {
+        var webview = document.getElementById("potion");
+        var indicator = document.querySelector(".indicator");
+
+        // var loadstart = function() {
+        //   indicator.innerText = "loading...";
+        // }
+        // var loadstop = function() {
+        //   indicator.innerText = "";
+        // }
+        // webview.addEventListener("did-start-loading", loadstart);
+        // webview.addEventListener("did-stop-loading", loadstop);
+      }
+    </script>
+  </body>
+</html>
